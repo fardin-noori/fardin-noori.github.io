@@ -625,7 +625,7 @@ footer {
 }
 
 /*
-    -------------------------------
+-------------------------------
     ----- 8. Project Styles -----
     -------------------------------
 */
@@ -655,24 +655,23 @@ footer {
 }
 
 .project-info {
-    display: flex; // Use flexbox layout
-    flex-direction: column; // Arrange child elements vertically
-    justify-content: space-between; // Distribute space between child elements
-    height: auto; // Let the height adjust dynamically
-    max-width: 400px; // Set a maximum width to prevent the box from becoming too wide
-    padding: 20px; // Add padding for spacing
-    border: 1px solid #ccc; // Add a border for visual separation
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 300px;
+    padding: 15px;
 
     h3 {
-        margin-top: 0; // Remove default margin for the heading
+        font-size: 1.5em;
+        font-weight: 300;
+        color: $heading;
+        margin: 0 0 15px 0;
     }
 
     p {
-        flex: 1; // Let the paragraph take up remaining space
-    }
-
-    a {
-        align-self: flex-end; // Align the link to the bottom of the box
+        color: $text;
+        margin: 0 0 15px 0;
+        font-size: 0.9em;
     }
 }
 
@@ -688,7 +687,6 @@ footer {
 #more-projects {
     display: none;
 }
-
 /*
     -------------------------------
     ----- 9. Skills Styles -----
